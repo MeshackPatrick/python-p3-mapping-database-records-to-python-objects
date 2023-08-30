@@ -2,6 +2,7 @@
 
 from song import Song, CONN, CURSOR
 
+
 def reset_database():
     Song.drop_table()
     Song.create_table()
@@ -11,4 +12,4 @@ def reset_database():
 
 if __name__ == '__main__':
     reset_database()
-    import ipdb; ipdb.set_trace()
+    import pytest; pytest.set_trace()
